@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>By Molema LEMA</title>
+        <meta name="description" content="HRMC Dev Test">
+        <meta name="author" content="Molema LEMA">
+        <link rel="stylesheet" href="css/styles.css">
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Main Body Wrapper -->
+        <div id="bodywrapper">
+            <!-- Header -->
+            <header id="mainheader">
+                <p>
+                    <span class="headerlogo"  style="display: block;">HM Revenue &amp; Customs</span>
+                </p>
+            </header>
+            <!-- Main Content -->
+            <section id="maincontent">
+                <h1>Renew your tax credits</h1>
+                <h3>Your details</h3>
+                <!-- Main Form Start -->
+                <form action="/" onsubmit="return validate()" method="post">
+                    <p>
+                        <label for="ninum" id="ninumlabel">Your National Insurance number</label> <a id="showmelink" href="#">show me where to find this</a>
+                    </p>
+                    <p id="inputone">
+                        <input name="ninum" maxlength="9" id="ninum"  autocomplete="off" size="15" type="text">
+						<span id="lengtherror"></span>
+                    </p>
+                    <p>
+                        Your tax credits renewal number is the 15 digit number on the bottom right hand corner of your annual declaration. Enter it below.
+                    </p>
+                    <img src="./img/taxdoc.png" id="taxdoc" alt="tax document image">
+                    <p>
+                        <label for="taxcreditsnum" id="taxcreditsnumlabel">Your tax credits renewal number</label>
+                    </p>
+                    <p>
+                        <input name="taxcreditsnum" maxlength="15" id="taxcreditsnum" autocomplete="off" pattern="[0-9]*" type="text" size="22">						
+						<span id="numerror"></span>
+                    </p>
+                    <p  id="actionbtn">
+                        <input name="nextbtn" value="Next" id="nextbtn" class="button" type="submit">
+                    </p>
+                </form>
+                <!-- Main Form End -->
+                <p>
+                    <a href="#">Get help with this page.</a>
+                </p>
+            </section>
+        </div>
+        <footer id="footer">
+            <!-- Footer Wrapper -->
+            <div id="footerwrapper">
+                <!-- Footer Left Column Content -->
+                <section id="leftcol">
+                    <ul class="footer-menu">
+                        <li><a href="#" target="_blank">Help</a></li>
+                        <li><a href="#" target="_blank">Cookies</a></li>
+                        <li><a href="#" target="_blank">Privacy policy</a></li>
+                        <li><a href="#" target="_blank">Terms and conditions</a></li>
+                    </ul>
+                    <div class="olg-content">
+                        <img src="./img/ogl.png" id="oglimg" alt="OGL logo">					
+                        <p>
+                            All content is available under the <a href="#" target="_blank">Open Government Licence v2.0</a>, except where otherwise stated
+                        </p>
+                    </div>
+                </section>
+                <!-- Footer Right Column Content -->
+                <section id="rightcol">
+                    <img src="./img/crown.png" id="crownimg" alt="Crown logo"> 
+                    <p>
+                        <a href="#" target="_blank">&copy; Crown Copyright</a>
+                    </p>
+                </section>
+            </div>
+        </footer>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
